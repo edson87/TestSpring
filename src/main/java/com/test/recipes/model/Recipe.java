@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Recipe extends ModelBase {
     private String nombre;
-    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @ManyToOne(optional = false)
     private Users users;
     private String description;
 
